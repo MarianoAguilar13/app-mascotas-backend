@@ -8,6 +8,7 @@ export const sequelize = new Sequelize({
   database: process.env.POSTGRE_DATABASE,
   host: process.env.POSTGRE_HOST,
   ssl: true,
+  port: 5432,
   // esto es necesario para que corra correctamente
   dialectOptions: {
     ssl: {
