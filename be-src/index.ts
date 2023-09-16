@@ -18,12 +18,12 @@ import {
 } from "./controllers/pets-controllers";
 import { crearReport, enviarMail } from "./controllers/reports-controllers";
 import { Report, User } from "./db";
-
+/*
 import { sequelize } from "./db/conection";
 
 sequelize.sync({ force: true }).then(() => {
   console.log("Se sincronizo la DB");
-});
+});*/
 
 const port = process.env.PORT || 3000;
 const app = express();
