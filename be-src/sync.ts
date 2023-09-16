@@ -1,5 +1,5 @@
 import { sequelize } from "./db/conection";
 
-sequelize.sync({ alter: true }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   console.log("Se sincronizo la DB");
 });
